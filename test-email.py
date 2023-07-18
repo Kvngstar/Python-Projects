@@ -19,7 +19,7 @@ em['to'] = email_reciever
 em['subject'] = subject
 em.set_content(body)
 
-context =ssl.create_default_context()
+context = ssl.create_default_context()
 with smtplib.SMTP_SSL('smtp.gmail.com',465,context=context) as smpt:
     smpt.login(email_sender,email_password)
     smpt.sendmail(email_sender,email_reciever,em.as_string()  )

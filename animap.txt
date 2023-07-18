@@ -1,0 +1,4 @@
+tiger, 
+lion,
+hen,
+egle,fish,dog,cat
